@@ -13,8 +13,11 @@ repositories {
 android {
     compileSdkVersion 25
     buildToolsVersion '25.0.3'
-    aaptOptions.cruncherEnabled = false
-    aaptOptions.useNewCruncher = false
+
+    aaptOptions {
+        cruncherEnabled = false
+        useNewCruncher = false
+    }
 
     defaultConfig {
         applicationId "com.taobao.demo"
